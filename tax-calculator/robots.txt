@@ -26,7 +26,7 @@ Allow: /
 Crawl-delay: 3
 
 # Sitemap location
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://thecalcbase.com/tax-calculator/sitemap.xml
 
 # Host (optional, helps with crawling)
-Host: yourdomain.com
+Host: thecalcbase.com
