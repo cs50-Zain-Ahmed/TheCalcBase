@@ -1,0 +1,32 @@
+# Robots.txt for Pakistan Tax Calculator
+# Allow all search engines to crawl our content
+
+User-agent: *
+Allow: /
+Allow: /style.css
+Allow: /script.js
+Allow: /index.html
+
+# Disallow unnecessary files that don't add SEO value
+Disallow: /*.txt$ 
+Disallow: /error*
+Disallow: /*?debug=*
+
+# Special instructions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 3
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Host (optional, helps with crawling)
+Host: yourdomain.com

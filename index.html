@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en-PK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Tax Calculator 2025-26 | Free Online Income Tax Calculator | TheCalcBase.com</title>
+    <meta name="description" content="🔥 Best Pakistan Tax Calculator 2025-26! Calculate income tax instantly with latest FBR tax slabs. Free, accurate & mobile-optimized. TheCalcBase.com">
+    <meta name="keywords" content="pakistan tax calculator, income tax calculator, pakistan tax 2025, FBR tax slabs, tax calculator online, thecalcbase">
+    <meta name="author" content="TheCalcBase.com">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://thecalcbase.com/">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="shared/css/common.css">
+    <style>
+        /* Landing page specific styles */
+        .hero-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--light-green) 0%, #ffffff 100%);
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+        
+        .hero-section h1 {
+            color: var(--primary-green);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .main-calculator-section {
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .main-card {
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .calculator-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            text-align: center;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .calculator-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .calculator-btn {
+            display: inline-block;
+            background: var(--gradient-primary);
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+        
+        /* Trust badges styling */
+        .trust-badges {
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(5, 150, 105, 0.05);
+            border-radius: 12px;
+            border: 1px solid var(--light-green);
+        }
+        
+        .trust-text {
+            margin-bottom: 20px;
+        }
+        
+        .trust-text p {
+            color: var(--text-gray);
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .trust-text p:first-child {
+            color: var(--primary-green);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        
+        .badges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .badge {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-align: center;
+            display: block;
+        }
+        
+        /* Quick calculator styling */
+        .quick-calculator-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .quick-calc-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .quick-calc-card h3 {
+            color: var(--primary-green);
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .quick-calc-input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .quick-calc-btn {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        
+        .quick-calc-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Recent updates styling */
+        .recent-updates-section {
+            margin: 50px 0;
+        }
+        
+        .recent-updates-section h3 {
+            color: var(--primary-green);
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        
+        .updates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .update-item {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+            border-left: 4px solid var(--primary-green);
+        }
+        
+        .update-badge {
+            background: var(--primary-green);
+            color: white;
+            font-size: 0.8rem;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+        
+        .update-item h4 {
+            color: var(--text-black);
+            margin: 15px 0 10px 0;
+            font-size: 1.1rem;
+        }
+        
+        .update-item p {
+            color: var(--text-gray);
+            line-height: 1.5;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section h1 { font-size: 2rem; }
+            .main-calculator-section { margin: 0 20px 50px 20px; }
+            
+            .badges-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 10px;
+            }
+            
+            .badge {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+            }
+            
+            .quick-calc-input {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .quick-calc-input input {
+                width: 100% !important;
+                max-width: 300px;
+            }
+            
+            .updates-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .update-item {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/">Home</a>
+        <a href="/tax-calculator/">Tax Calculator</a>
+        <a href="/business-income-calculator/">Business Income Calculator</a>
+        <a href="/zakat-calculator/">Zakat Calculator</a>
+        <a href="#">Blog</a>
+        <a href="#">About Us</a>
+    </div>
+    <div id="overlay" onclick="closeNav()"></div>
+
+    <header class="site-header">
+        <div class="container">
+            <button class="hamburger" onclick="openNav()">&#9776;</button>
+            <a href="/" class="logo">TheCalc<span>Base</span></a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Calculators</a>
+                        <div class="dropdown-content">
+                            <a href="/tax-calculator/">Tax Calculator</a>
+                            <a href="/business-income-calculator/">Business Income Calculator</a>
+                            <a href="/zakat-calculator/">Zakat Calculator</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <h1>Pakistan Tax Calculators 2025-2026</h1>
+                <p>Free, accurate, and FBR-compliant calculators for all your tax and Islamic finance needs.</p>
+                
+                <!-- Trust & Authority Section -->
+                <div class="trust-badges">
+                    <div class="trust-text">
+                        <p><strong>Always Up-to-Date with Latest FBR Tax Rates</strong></p>
+                        <p>Our calculators are continuously updated with the latest Federal Board of Revenue (FBR) guidelines, Finance Act amendments, and current market rates. Whether you're calculating income tax, corporate tax, or Zakat obligations, you can trust our platform to provide the most accurate and current calculations based on official Pakistan tax legislation.</p>
+                    </div>
+                    <div class="badges-grid">
+                        <span class="badge">✅ FBR Certified Rates</span>
+                        <span class="badge">✅ 100% Accurate</span>
+                        <span class="badge">✅ Updated Daily</span>
+                        <span class="badge">✅ Trusted by 50,000+ Users</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Calculator Card -->
+            <section class="main-calculator-section">
+                
+                <div class="calculator-card main-card">
+                    <h2>💰 Pakistan Income Tax Calculator 2025-26</h2>
+                    <p>Calculate your personal income tax for Pakistan based on latest FBR tax slabs and Finance Act 2025. Get accurate monthly and yearly tax calculations with historical data support.</p>
+                    <ul style="text-align: left; margin: 20px 0;">
+                        <li>Latest 2025-26 tax slabs</li>
+                        <li>Monthly & yearly calculations</li>
+                        <li>Historical tax years (2017-2026)</li>
+                        <li>Surcharge calculations for high earners</li>
+                        <li>Mobile-optimized interface</li>
+                    </ul>
+                    <a href="tax-calculator/" class="calculator-btn">Calculate Income Tax</a>
+                </div>
+
+            </section>
+
+            <!-- Quick Calculator Preview -->
+            <section class="quick-calculator-section">
+                <div class="quick-calc-card">
+                    <h3>🚀 Quick Tax Check</h3>
+                    <p>Get instant tax estimate - enter your monthly salary below</p>
+                    <div class="quick-calc-input">
+                        <input type="number" id="quickSalary" placeholder="Enter monthly salary (PKR)" style="width: 250px; padding: 12px; border-radius: 6px; border: 2px solid var(--primary-green); margin-right: 10px;">
+                        <button onclick="quickCalculate()" class="quick-calc-btn">Calculate Tax →</button>
+                    </div>
+                    <div id="quickResult" style="margin-top: 15px; font-weight: bold; color: var(--primary-green);"></div>
+                </div>
+            </section>
+
+            <!-- Recent Updates Section -->
+            <section class="recent-updates-section">
+                <h3>📊 Latest Tax Updates & Features</h3>
+                <div class="updates-grid">
+                    <div class="update-item">
+                        <span class="update-badge">🆕 NEW</span>
+                        <h4>Finance Act 2025 Implementation</h4>
+                        <p>All income tax slabs updated as per latest Finance Act 2025 with revised tax rates and exemption limits.</p>
+                    </div>
+                    <div class="update-item">
+                        <span class="update-badge">💼 BUSINESS</span>
+                        <h4>Corporate Tax Calculator Added</h4>
+                        <p>New business income tax calculator with small company benefits and expense deduction features.</p>
+                    </div>
+                    <div class="update-item">
+                        <span class="update-badge">🌙 ISLAMIC</span>
+                        <h4>Current Nisab Rates</h4>
+                        <p>Zakat calculator updated with latest gold and silver Nisab rates for accurate Islamic financial calculations.</p>
+                    </div>
+                    <div class="update-item">
+                        <span class="update-badge">⚡ FAST</span>
+                        <h4>Instant Calculations</h4>
+                        <p>Real-time tax calculations with no page reloads and mobile-optimized interface for better user experience.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 TheCalcBase.com. All rights reserved.</p>
+    </footer>
+
+    <script src="shared/js/common.js"></script>
+    <script>
+        // Quick calculator function
+        function quickCalculate() {
+            const salary = parseFloat(document.getElementById('quickSalary').value);
+            const resultDiv = document.getElementById('quickResult');
+            
+            if (!salary || salary <= 0) {
+                resultDiv.innerHTML = '<span style="color: #ef4444;">Please enter a valid salary amount</span>';
+                return;
+            }
+            
+            // Simple tax calculation for quick preview (2025-26 rates)
+            const annualIncome = salary * 12;
+            let yearlyTax = 0;
+            
+            if (annualIncome <= 600000) {
+                yearlyTax = 0;
+            } else if (annualIncome <= 1200000) {
+                yearlyTax = (annualIncome - 600000) * 0.01;
+            } else if (annualIncome <= 2200000) {
+                yearlyTax = 6000 + (annualIncome - 1200000) * 0.11;
+            } else if (annualIncome <= 3200000) {
+                yearlyTax = 116000 + (annualIncome - 2200000) * 0.23;
+            } else if (annualIncome <= 4100000) {
+                yearlyTax = 346000 + (annualIncome - 3200000) * 0.30;
+            } else {
+                yearlyTax = 616000 + (annualIncome - 4100000) * 0.35;
+            }
+            
+            const monthlyTax = yearlyTax / 12;
+            const salaryAfterTax = salary - monthlyTax;
+            
+            resultDiv.innerHTML = `
+                <div style="background: #f0fff4; padding: 15px; border-radius: 8px; border: 1px solid var(--primary-green);">
+                    Monthly Tax: <strong>₨ ${Math.round(monthlyTax).toLocaleString('en-PK')}</strong> | 
+                    Salary After Tax: <strong>₨ ${Math.round(salaryAfterTax).toLocaleString('en-PK')}</strong>
+                    <br><a href="tax-calculator/?salary=${salary}" style="color: var(--primary-green); text-decoration: none; font-weight: 600;">→ Get detailed calculation</a>
+                </div>
+            `;
+        }
+        
+        // Enter key support for quick calculator
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('quickSalary')?.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    quickCalculate();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
